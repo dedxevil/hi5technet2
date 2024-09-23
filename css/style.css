@@ -1,3 +1,59 @@
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+h5 {
+    font-family: "Space Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio for landscape */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire container */
+}
+
+/* Hide the mobile video by default */
+.mobile-video {
+    display: none;
+}
+
+/* Show the mobile video for smaller screens and hide the desktop one */
+@media (max-width: 768px) {
+    .desktop-video {
+        display: none;
+    }
+    .mobile-video {
+        display: block;
+        padding-bottom: 177.78%; /* Aspect ratio for portrait (9:16) */
+    }
+}
 /*** Spinner Start ***/
 
 #spinner {
@@ -154,6 +210,8 @@
 
 .carousel-item {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-item::after {
@@ -658,7 +716,7 @@
     letter-spacing: 1px;
 }
 
-.footer .Hi5Technetnet-link a:hover {
+.footer .Hi5Technet-link a:hover {
     background: var(--bs-secondary);
     border: 0;
 }
