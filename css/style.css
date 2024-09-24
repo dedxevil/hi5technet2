@@ -697,6 +697,10 @@ h5 {
 
 .contact-form {
     background: #26d48c;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; 
 }
 
 /*** Contact End ***/
