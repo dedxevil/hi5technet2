@@ -681,7 +681,7 @@ h5 {
 .contact-detail::before {
     position: absolute;
     content: "";
-    height: 50%;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -693,6 +693,82 @@ h5 {
 
 .contact-map {
     background: #26d48c;
+}
+
+.custom-background {
+    background-color: #26d48c;
+    color: white;
+    border-radius: 15px; /* Adjust the value as needed */
+        padding: 20px; /* Optional: Adds some padding inside the div */
+}
+
+.custom-background2 {
+    background-color: #26d48c;
+    border-radius: 15px; /* Adjust the value as needed */
+        padding: 10px; /* Optional: Adds some padding inside the div */
+}
+
+.custom-background3 {
+    background-color: #ffffff;
+    border-radius: 15px; /* Adjust the value as needed */
+        padding: 10px; /* Optional: Adds some padding inside the div */
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list i {
+    margin-right: 10px;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: white;
+    border: 12px solid #28a745; /* Thicker green border */
+    border-radius: 15px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Service Card Hover Effect */
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: #28a745; /* Change border color to blue on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    background-color: #3454F4; /* Change background color to blue */
+    color: white; /* Change text color to white */
+}
+
+/* To ensure all text inside the card changes color on hover */
+.service-card:hover .service-title,
+.service-card:hover .service-list li,
+.service-card:hover i {
+    color: white; /* Ensure all text and icons are white */
+}
+
+/* Service Content */
+.service-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Service Title */
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Service List */
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .contact-form {
