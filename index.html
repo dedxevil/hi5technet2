@@ -31,16 +31,28 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="stylesheet" href="wa.css" />
         <link rel="manifest" href="/site.webmanifest">
     </head>
 
     <body>
+        <script src="wa-script.js"></script>
+        <div id="whatsapp-container">
+        <!-- <div id="whatsapp-label">Chat With Us</div> -->
+        <!-- <div id="whatsapp-options" class="hidden">
+            <button id="india-button">Rest of the world</button>
+            <button id="outside-india-button">Malaysia</button>
+        </div> -->
+        <a id="whatsapp-button">
+            <img src="img/whatsapp-animated.gif" alt="WhatsApp Chat">
+        </a>
+    </div>
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
         <!-- Spinner End -->
-
+        <!-- <a id="top"></a> -->
         <!-- Topbar Start -->
         <div class="container-fluid bg-dark py-2 d-none d-md-flex">
             <div class="container">
@@ -62,7 +74,7 @@
         <!-- Topbar End -->
 
         <!-- Navbar Start -->
-        <div class="container-fluid bg-primary">
+        <div id = "navbar"class="container-fluid bg-primary">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
                     <a href="index.html" class="navbar-brand">
@@ -245,7 +257,7 @@
                             <div class="p-4 text-center services-content">
                                 <div class="services-content-icon">
                                     <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3"> UX and UI Design</h4>
+                                    <h4 class="mb-3"> UI and UX Design</h4>
                                     <p class="mb-4">Focus on creating visually appealing, intuitive,
                                         and user-friendly designs through wireframing,
                                         prototyping, and usability testing.</p>
@@ -338,21 +350,20 @@
                     <!-- Salesforce Section -->
                     <div class="col-lg-4 col-md-6 col-sm-12 service-card wow fadeIn" data-wow-delay=".3s">
                         <div class="service-content">
+                            <i class="fab fa-salesforce fa-7x mb-4 text-primary"></i>
                             <h4 class="service-title">Salesforce</h4>
                             <ul class="service-list">
-                                <li><i class="fas fa-headset"></i>Service Cloud</li>
-                                <li><i class="fas fa-bullhorn"></i>Marketing Cloud</li>
-                                <li><i class="fas fa-shopping-cart"></i>Commerce Cloud</li>
-                                <li><i class="fas fa-cogs"></i>Salesforce Platform</li>
-                                <li><i class="fas fa-brain"></i>Salesforce Einstein</li>
-                                <li><i class="fas fa-link"></i>Salesforce Integration</li>
-                                <li><i class="fas fa-code"></i>Custom App Development</li>
+                                <li><i class="fas fa-user-shield"></i>Admin</li>
+                                <li><i class="fas fa-code"></i>Developer</li>
+                                <li><i class="fas fa-bolt"></i>Lighting</li>
                             </ul>
+                            
                         </div>
                     </div>
                     <!-- Microsoft Dynamics 365 Section -->
                     <div class="col-lg-4 col-md-6 col-sm-12 service-card wow fadeIn" data-wow-delay=".5s">
                         <div class="service-content">
+                            <i class="fab fa-microsoft fa-7x mb-4 text-primary"></i>
                             <h4 class="service-title">Microsoft Dynamics 365</h4>
                             <ul class="service-list">
                                 <li><i class="fas fa-business-time"></i>Business Central</li>
@@ -378,14 +389,18 @@
                     <!-- Tools Administration Section -->
                     <div class="col-lg-4 col-md-6 col-sm-12 service-card wow fadeIn" data-wow-delay=".7s">
                         <div class="service-content">
-                            <h4 class="service-title">Tools Administration</h4>
-                            <ul class="service-list">
-                                <li><i class="fas fa-tools"></i>Jira Administration</li>
-                                <li><i class="fas fa-lock"></i>Okta Administration</li>
-                                <!-- Add more list items -->
-                            </ul>
+                            <i class="fas fa-user-check fa-7x mb-4 text-primary"></i>
+                            <h4 class="service-title">Employee Screening</h4>
+        <ul class="service-list">
+            <li><i class="fas fa-code"></i>Full Stack Developer</li>
+            <li><i class="fas fa-coffee"></i>Java Developer</li>
+            <li><i class="fas fa-database"></i>SQL Developer</li>
+            <li><i class="fas fa-chart-bar"></i>Power BI</li>
+            <li><i class="fas fa-vial"></i>QA Testing</li>
+        </ul>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -405,9 +420,9 @@
                             <div class="project-img">
                                 <img src="img/project-1.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
+                                    <a href="https://aramtraders.com/" class="text-center">
                                         <h4 class="text-secondary">Web design</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
+                                        <p class="m-0 text-white">E-Commerce Setup</p>
                                     </a>
                                 </div>
                             </div>
@@ -418,9 +433,9 @@
                             <div class="project-img">
                                 <img src="img/project-2.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Cyber Security</h4>
-                                        <p class="m-0 text-white">Cyber Security Core</p>
+                                    <a href="https://bestdirectfinance.co.uk/" class="text-center">
+                                        <h4 class="text-secondary">Web Development and Branding</h4>
+                                        <p class="m-0 text-white"></p>
                                     </a>
                                 </div>
                             </div>
@@ -431,9 +446,9 @@
                             <div class="project-img">
                                 <img src="img/project-3.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Mobile Info</h4>
-                                        <p class="m-0 text-white">Upcomming Phone</p>
+                                    <a href="https://thebestnutrition.in/" class="text-center">
+                                        <h4 class="text-secondary">Branding revamp</h4>
+                                        <p class="m-0 text-white">Web Design</p>
                                     </a>
                                 </div>
                             </div>
@@ -444,7 +459,7 @@
                             <div class="project-img">
                                 <img src="img/project-4.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
+                                    <a href="https://hansofttechnologies.com/partim/" class="text-center">
                                         <h4 class="text-secondary">Web Development</h4>
                                         <p class="m-0 text-white">Web Analysis</p>
                                     </a>
@@ -457,7 +472,7 @@
                             <div class="project-img">
                                 <img src="img/project-5.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
+                                    <a href="https://bemoffshore.com/" class="text-center">
                                         <h4 class="text-secondary">Digital Marketing</h4>
                                         <p class="m-0 text-white">Marketing Analysis</p>
                                     </a>
@@ -470,9 +485,9 @@
                             <div class="project-img">
                                 <img src="img/project-6.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                    <a href="#" class="text-center">
-                                        <h4 class="text-secondary">keyword Research</h4>
-                                        <p class="m-0 text-white">keyword Analysis</p>
+                                    <a href="https://speed-sew.com/" class="text-center">
+                                        <h4 class="text-secondary">SEO and Keyword Research</h4>
+                                        <p class="m-0 text-white"></p>
                                     </a>
                                 </div>
                             </div>
@@ -622,6 +637,25 @@
                         <div class="team-content">
                             <div class="team-img-icon">
                                 <div class="team-img rounded-circle">
+                                    <img src="img/team-1.png" class="img-fluid w-100 rounded-circle" alt="">
+                                </div>
+                                <div class="team-name text-center py-3">
+                                    <h4 class="">Saravana Kumar A</h4>
+                                    <p class="m-0">Chief Technical Officer</p>
+                                </div>
+                                <div class="team-icon d-flex justify-content-center pb-4">
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
+                                    <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded team-item">
+                        <div class="team-content">
+                            <div class="team-img-icon">
+                                <div class="team-img rounded-circle">
                                     <img src="img/team-2.png" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
@@ -645,7 +679,7 @@
                                 </div>
                                 <div class="team-name text-center py-3">
                                     <h4 class="">Gowtham S</h4>
-                                    <p class="m-0">UI/UX Designer</p>
+                                    <p class="m-0">UI / UX Designer</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
                                     <a class="btn btn-square btn-secondary text-white rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -720,7 +754,7 @@
                                     <img src="img/team-4.png" class="img-fluid w-100 rounded-circle" alt="">
                                 </div>
                                 <div class="team-name text-center py-3">
-                                    <h4 class="">Anitha</h4>
+                                    <h4 class="">Anisha</h4>
                                     <p class="m-0">Content Writer</p>
                                 </div>
                                 <div class="team-icon d-flex justify-content-center pb-4">
@@ -842,65 +876,26 @@
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
                     <h5 class="text-primary">Get In Touch</h5>
                     <h1 class="mb-3">Contact for any query</h1>
-                    <!-- <p class="mb-2">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
                 </div>
                 <div class="contact-detail position-relative p-5">
-                    <!-- <div class="row g-5 mb-5 justify-content-center">
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fas fa-map-marker-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Address</h4>
-                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">23 rank Str, NY</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fa fa-phone text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Call Us</h4>
-                                    <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                            <div class="d-flex bg-light p-3 rounded">
-                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
-                                    <i class="fa fa-envelope text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h4 class="text-primary">Email Us</h4>
-                                    <a class="h5" href="mailto:info@example.com" target="_blank">info@example.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    
-                    <div style="display: flex; justify-content: center; padding: 20px;">
-                        <div style="padding: 20px; height: 500px; width: 500px; border-radius: 8px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); margin-right: 20px;">
-                            <iframe style="border-radius: 8px; width: 100%; height: 100%; border: none;" 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1164.3404617360538!2d77.0480693207095!3d11.01167731127154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857069dc284f7%3A0x370bdcae1c9d5913!2s226X%2BRGG%2C%20Ondipudur%20Bridge%2C%20Kannan%20Nagar%2C%20Sivalingapuram%2C%20Ondipudur%2C%20Neelikonampalayam%2C%20Tamil%20Nadu%20641016!5e0!3m2!1sen!2sin!4v1727143487989!5m2!1sen!2sin" 
-                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    
-                        <div style="padding: 20px; height: 500px; width: 500px; border-radius: 8px; background-color: #fff; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
-                            <iframe style="border-radius: 8px; width: 100%; height: 100%; border: none;" 
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSeMy4A2KrbzPuuIoNyWsEs3-8E3E1HMUKv9P76vBe5Fc0XLrQ/viewform?embedded=true" 
-                                frameborder="0" marginheight="0" marginwidth="0">
-                            </iframe>
-                        </div>
+                    <div style="padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);">
+                        <iframe style="border-radius: 8px; width: 100%; height: 500px; border: none;" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1164.3404617360538!2d77.0480693207095!3d11.01167731127154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857069dc284f7%3A0x370bdcae1c9d5913!2s226X%2BRGG%2C%20Ondipudur%20Bridge%2C%20Kannan%20Nagar%2C%20Sivalingapuram%2C%20Ondipudur%2C%20Neelikonampalayam%2C%20Tamil%20Nadu%20641016!5e0!3m2!1sen!2sin!4v1727143487989!5m2!1sen!2sin" 
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                    
+                    <div style="padding: 20px; border-radius: 8px; background-color: rgba(255, 255, 255, 0.5); box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); width: 80%; margin: 0 auto;">
+                        <iframe style="border-radius: 8px; width: 100%; height: 600px; border: none;" 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeMy4A2KrbzPuuIoNyWsEs3-8E3E1HMUKv9P76vBe5Fc0XLrQ/viewform?embedded=true" 
+                            frameborder="0" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
                 </div>
             </div> 
         </div>
+        
+        
+        
         <!-- Contact End -->
 
 
@@ -966,7 +961,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+        <!-- <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a> -->
 
         
         <!-- JavaScript Libraries -->
