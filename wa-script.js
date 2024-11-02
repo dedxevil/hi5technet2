@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // WhatsApp numbers
-    const indianNumber = '918667842296';
+    const indianNumber = '919360572528';
     const internationalNumber = '601127728901';
 
     // Elements
