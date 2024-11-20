@@ -803,3 +803,15 @@ h5 {
 }
 
 /*** Footer End ***/
+
+.circle {
+    position: fixed; /* Fixed ensures it stays in view regardless of scrolling */
+    width: 50px;
+    height: 50px;
+    border: 2px solid gray; /* Outline for visibility */
+    background-color: transparent; /* Transparent to show only the border */
+    border-radius: 50%;
+    pointer-events: none; /* Ensure it doesn’t block clicks */
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth color change */
+  }
