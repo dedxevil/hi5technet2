@@ -46,6 +46,12 @@
         <a id="whatsapp-button">
             <img src="img/whatsapp-animated.gif" alt="WhatsApp Chat">
         </a>
+        <div id="imagePopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-button" onclick="closePopup()">×</span>
+    <img src="img/nextgen.jpg" alt="NextGen" class="popup-image">
+  </div>
+</div>
     </div>
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -85,6 +91,7 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                            <a href="nextgen.html" class="nav-item nav-link glowing-link" target="_blank" rel="noopener noreferrer">NextGen</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="service.html" class="nav-item nav-link">Services</a>
                             <a href="project.html" class="nav-item nav-link">Projects</a>
@@ -1056,7 +1063,15 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script>
+function closePopup() {
+  document.getElementById("imagePopup").style.display = "none";
+}
 
+window.addEventListener("load", () => {
+  document.getElementById("imagePopup").style.display = "flex";
+});
+</script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
