@@ -857,22 +857,28 @@ h5 {
   justify-content: center;
   z-index: 9999;
   animation: fadeIn 0.4s ease-in-out;
+  padding: 10px; /* Prevent edge-to-edge overflow on mobile */
 }
 
 .popup-content {
   position: relative;
-  width: 90%;
+  width: 100%;
   max-width: 600px;
+  max-height: 90vh; /* Limit height on small screens */
   background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
 
 .popup-image {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 80vh; /* Prevent image from exceeding viewport height */
+  object-fit: contain;
 }
 
 .close-button {
@@ -891,10 +897,29 @@ h5 {
   font-weight: bold;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   transition: background 0.2s;
+  z-index: 1;
 }
 .close-button:hover {
   background: #f0f0f0;
 }
+
+/* Optional: improve touch support */
+@media (max-width: 600px) {
+  .popup-content {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .close-button {
+    top: 8px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.95); }
