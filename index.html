@@ -47,11 +47,11 @@
             <img src="img/whatsapp-animated.gif" alt="WhatsApp Chat">
         </a>
         <div id="imagePopup" class="popup-overlay">
-  <div class="popup-content">
-    <span class="close-button" onclick="closePopup()">×</span>
-    <img src="img/nextgen.jpg" alt="NextGen" class="popup-image">
-  </div>
-</div>
+            <div class="popup-content">
+                <span class="close-button" onclick="closePopup()">×</span>
+                <img src="img/nextgen.jpg" alt="NextGen" class="popup-image">
+            </div>
+        </div>
     </div>
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -1064,13 +1064,16 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script>
-function closePopup() {
-  document.getElementById("imagePopup").style.display = "none";
-}
+ function closePopup() {
+    document.getElementById("imagePopup").style.display = "none";
+    sessionStorage.setItem("popupClosed", "true");
+  }
 
-window.addEventListener("load", () => {
-  document.getElementById("imagePopup").style.display = "flex";
-});
+  window.addEventListener("load", () => {
+    if (!sessionStorage.getItem("popupClosed")) {
+      document.getElementById("imagePopup").style.display = "flex";
+    }
+  });
 </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
