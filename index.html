@@ -46,12 +46,12 @@
         <a id="whatsapp-button">
             <img src="img/whatsapp-animated.gif" alt="WhatsApp Chat">
         </a>
-        <!-- <div id="imagePopup" class="popup-overlay">
+        <div id="imagePopup" class="popup-overlay">
             <div class="popup-content">
                 <span class="close-button" onclick="closePopup()">×</span>
                 <img src="img/nextgen.jpg" alt="NextGen" class="popup-image">
             </div>
-        </div> -->
+        </div>
     </div>
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -91,14 +91,14 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0 text-nowrap">
-                            <!-- <a href="nextgen.html" class="nav-item nav-link glowing-link" target="_blank" rel="noopener noreferrer">NextGen</a> -->
+                            <a href="nextgen.html" class="nav-item nav-link glowing-link" target="_blank" rel="noopener noreferrer">NextGen</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="service.html" class="nav-item nav-link">Services</a>
                             <a href="project.html" class="nav-item nav-link">Projects</a>
                             <a href="team.html" class="nav-item nav-link">Team</a>
                             <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
                             <a href="https://drive.google.com/file/d/1uqbIxHkO22o7Ep8pLryXVvy1hUPHPVI7/view" class="nav-item nav-link" target="_blank">Brochure</a>
-                            <a href="/files/hi5technet-privacy-policy.pdf" class="nav-item nav-link" target="_blank">Privacy Policy</a>
+                            <a href="/hi5technet2/files/hi5technet-privacy-policy.pdf" class="nav-item nav-link" target="_blank">Privacy Policy</a>
                             <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded">
@@ -1065,16 +1065,16 @@
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         <script>
-//  function closePopup() {
-//     document.getElementById("imagePopup").style.display = "none";
-//     sessionStorage.setItem("popupClosed", "true");
-//   }
+  function closePopup() {
+     document.getElementById("imagePopup").style.display = "none";
+     sessionStorage.setItem("popupClosed", "true");
+   }
 
-//   window.addEventListener("load", () => {
-//     if (!sessionStorage.getItem("popupClosed")) {
-//       document.getElementById("imagePopup").style.display = "flex";
-//     }
-//   });
+   window.addEventListener("load", () => {
+     if (!sessionStorage.getItem("popupClosed")) {
+       document.getElementById("imagePopup").style.display = "flex";
+     }
+   });
 </script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
